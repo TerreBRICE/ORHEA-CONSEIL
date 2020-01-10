@@ -1,4 +1,8 @@
 <?php
+
+// Configuration common to all environments
+include_once __DIR__ . '/wp-config.common.php';
+
 /**
  * La configuration de base de votre installation WordPress.
  *
@@ -84,6 +88,7 @@ $table_prefix = 'oc_';
  */
 define('WP_DEBUG', true);
 
+define('VP_ENVIRONMENT', 'default');
 /* C’est tout, ne touchez pas à ce qui suit ! Bonne publication. */
 
 /** Chemin absolu vers le dossier de WordPress. */
